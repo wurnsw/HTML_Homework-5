@@ -363,7 +363,33 @@ a {
 }
 
 .service__image {
+  display: flex;
+
   width: 370px;
+}
+
+.service__overlay {
+  height: 70px;
+
+  position: relative;
+  bottom: 70px;
+
+  background-color: #2f303acc;
+}
+.service__title {
+  position: relative;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  text-align: center;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  color: var(--color-white);
 }
 /* #endregion */
 

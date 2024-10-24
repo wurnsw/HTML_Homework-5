@@ -107,9 +107,24 @@ a {
 /* #region ACTIVE */
 
 .is-active {
+  position: relative;
+
   color: var(--color-blue);
 }
 
+.is-active:after {
+  content: "";
+
+  position: absolute;
+  bottom: -1px;
+
+  height: 4px;
+  width: 100%;
+
+  border-radius: 2px;
+
+  background-color: var(--color-blue);
+}
 /* #endregion */
 
 /* #region CONTACTS */

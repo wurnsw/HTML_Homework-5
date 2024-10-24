@@ -96,7 +96,7 @@ a {
   font-size: 14px;
   letter-spacing: 0.02em;
 
-  transition: 200ms;
+  transition: 250ms color;
 }
 
 .nav__item:hover {
@@ -109,6 +109,7 @@ a {
 .is-active {
   color: var(--color-blue);
 }
+
 /* #endregion */
 
 /* #region CONTACTS */
@@ -137,7 +138,7 @@ a {
 
   color: var(--color-grey);
 
-  transition: 200ms;
+  transition: 250ms color;
 }
 
 .contacts__link:hover {
@@ -276,7 +277,7 @@ a {
   border: none;
   border-radius: 4px;
 
-  transition: all 200ms;
+  transition: all 250ms;
 
   cursor: pointer;
 }
@@ -471,7 +472,7 @@ a {
 
   border-radius: 50%;
 
-  transition: 200ms background-color;
+  transition: 250ms background-color;
 }
 
 .social__item:hover,
@@ -512,7 +513,7 @@ a {
   border: 1px solid var(--color-icon);
   border-radius: 4px;
 
-  transition: 200ms color;
+  transition: 250ms color;
 }
 
 .clients__item:hover {
@@ -592,15 +593,58 @@ a {
   display: flex;
   flex-direction: column;
 
-  transition: all 200ms;
+  transition: 250ms box-shadow;
+
+  cursor: pointer;
+}
+
+.project:hover .project__overlay {
+  box-shadow: 1px 4px 6px 0px #00000029;
+
+  transform: translateY(0);
 }
 
 .project:hover {
   box-shadow: 1px 4px 6px 0px #00000029;
 }
 
+.project__container {
+  position: relative;
+
+  overflow: hidden;
+}
+
 .project__image {
+  display: flex;
+
   width: 370px;
+}
+
+.project__overlay {
+  position: absolute;
+  top: 0;
+
+  transform: translateY(100%);
+
+  width: 370px;
+  height: 294px;
+
+  background-color: #2196f3e5;
+
+  transition: 250ms transform;
+}
+
+.project__description {
+  position: absolute;
+  left: 24px;
+  top: 63px;
+
+  line-height: 28px;
+
+  font-size: 18px;
+  letter-spacing: 0.03em;
+
+  color: var(--color-white);
 }
 
 .project__info {
@@ -620,7 +664,7 @@ a {
   letter-spacing: 0.06em;
 }
 
-.project__description {
+.project__type {
   line-height: 30px;
 
   font-size: 16px;

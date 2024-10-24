@@ -613,14 +613,12 @@ a {
   cursor: pointer;
 }
 
-.project:hover .project__overlay {
-  box-shadow: 1px 4px 6px 0px #00000029;
-
-  transform: translateY(0);
-}
-
 .project:hover {
   box-shadow: 1px 4px 6px 0px #00000029;
+}
+
+.project:hover .project__overlay {
+  transform: translateY(0);
 }
 
 .project__container {

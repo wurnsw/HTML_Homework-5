@@ -54,9 +54,12 @@
     <main class="main">
       <section class="banner">
         <h1 class="banner__title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="banner__button button button--blue button--bold">
+        <a
+          href="#modal"
+          class="banner__button button button--blue button--bold"
+        >
           Замовити послугу
-        </button>
+        </a>
       </section>
 
       <section class="section features">
@@ -486,13 +489,15 @@
       </div>
     </footer>
 
-    <section class="modal" hidden>
+    <section class="modal" id="modal">
       <div class="modal__overlay">
         <div class="modal__window">
           <button type="button" class="modal__button">
-            <svg class="modal__close">
-              <use href="./images/sprite.svg#close"></use>
-            </svg>
+            <a href="#">
+              <svg class="modal__close">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </a>
           </button>
         </div>
       </div>

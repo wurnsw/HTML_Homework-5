@@ -698,7 +698,14 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
+
+  display: none;
 }
+
+.modal:target {
+  display: block;
+}
+
 .modal__overlay {
   position: absolute;
   top: 0;
@@ -738,6 +745,8 @@ a {
 
   border: 1px solid #0000001a;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .modal__close {
